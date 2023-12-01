@@ -7,14 +7,39 @@ python3 simplicity_word.py -w word1,word2 -s <symbol> -c <company> -a <existing_
 
 ### Options
 ```
--w / --words word1,word2... nbsp Específica as palavras a serem usadas para compor as senhas. (obrigatório)
+usage: simplicity_word.py [-h] [-w WORDS] [-s SYMBOL] [-c COMPANY] [-a APPEND]
 
--s / --symbol <symbol>   Específica o símbolo especial a ser usado na senha. Ex: @#$&! (Obrigatório)
+options:
+  -h, --help            show this help message and exit
+  -w WORDS, --words WORDS
+                        Specify password words (without spaces) Ex: word1,word2
+  -s SYMBOL, --symbol SYMBOL
+                        Specify password symbol (@#$!*&)
+  -c COMPANY, --company COMPANY
+                        Specify the company. Output: user123@company
+  -a APPEND, --append APPEND
+                        Specify existing wordlist. Ex: wordlist.txt
+```
 
--c / --company <company_name>  Específica o nome da empresa a ser usada na senha para montar o padrão de senha geralmente usado em empresas. (Opcional)
+### Basic Usage
 
-`-a / --append <existing_wordlist>   Caso queria acrescentar o resultado a uma Wordlist já existe, basta epecificar o nome desta Wordlist aqui. (Opcional)
+Simple wordlist, without company name
 
+```bash
+python3 simplicity_word.py -w word1,word2 -s "@"
+```
+
+
+With company name
+
+```bash
+python3 simplicity_word.py -w word1,word2 -s "@" -c "redteamcompany"
+```
+
+updating an existing wordlist
+
+```bash
+python3 simplicity_word.py -w word1,word2 -s "@" -c "redteamcompany" -a "wordlist.txt"
 ```
 ---
 

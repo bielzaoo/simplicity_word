@@ -7,7 +7,7 @@ python3 simplicity_word.py -w word1,word2 -s <symbol> -c <company> -a <existing_
 
 ### Options
 ```
-usage: simplicity_word.py [-h] [-w WORDS] [-s SYMBOL] [-c COMPANY] [-a APPEND]
+usage: simplicity_word.py [-h] [-w WORDS] [-s SYMBOL] [-r RANGE] [-c COMPANY] [-a APPEND]
 
 options:
   -h, --help            show this help message and exit
@@ -15,6 +15,9 @@ options:
                         Specify password words (without spaces) Ex: word1,word2
   -s SYMBOL, --symbol SYMBOL
                         Specify password symbol (@#$!*&)
+  -r RANGE, --range RANGE
+                        specify the range of numbers to use in the password. Format: 0-0 (default
+                        0-10)
   -c COMPANY, --company COMPANY
                         Specify the company. Output: user123@company
   -a APPEND, --append APPEND

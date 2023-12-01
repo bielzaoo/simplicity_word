@@ -42,5 +42,7 @@ updating an existing wordlist
 python3 simplicity_word.py -w word1,word2 -s "@" -c "redteamcompany" -a "wordlist.txt"
 ```
 ---
+If you have any questions, you can contact me! :D
+I'm not a professional programmer, so ignore errors in the code if you have them! :smile:
 
-Qualquer dúvida, fique a vontade para entrar em contato comigo. Não sou um programador profissional, portanto, releve erros, caso encontre no código.
+*God bless*

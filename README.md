@@ -44,6 +44,11 @@ updating an existing wordlist
 ```bash
 python3 simplicity_word.py -w word1,word2 -s "@" -c "redteamcompany" -a "wordlist.txt"
 ```
+
+specifying a range of numbers
+```bash
+python3 simplicity_word.py -w word1,word2 -s "@" -c "redteamcompany" -a "wordlist.txt" -r 0-10
+```
 ---
 If you have any questions, you can contact me!
 I'm not a professional programmer, so ignore errors in the code if you have them! :smile:

@@ -1,6 +1,6 @@
 # Simplicity Wordlist
 
-Um simples script para ajudar na criação de Wordlist personalizadas.
+A simple script to help you create a wordlist
 
 ### Usage
 python3 simplicity_word.py -w word1,word2 -s <symbol> -c <company> -a <existing_wordlist>
